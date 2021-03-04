@@ -203,10 +203,12 @@ end
 
 for l = 0:1:2
     rectangle('Position', [16414+l*20000 4.6  2800 0.3],'FaceColor',[0 0.4470 0.7410])  % FrameTasks
-    rectangle('Position', [16414+l*20000+2800 4.6  400 0.3],'FaceColor',[1 0 0])  % FrameTasks
-    for k = 0:1:3
-       rectangle('Position', [3700+k*5000+l*20000 4.1  400 0.3],'FaceColor',[0.4660 0.6740 0.1880])  % CycleTasks
-    end
+    rectangle('Position', [16414+l*20000+2800 4.6  100 0.3],'FaceColor',[1 0 0])  % FrameTasks
+    rectangle('Position', [3700+0*5000+l*20000 4.1  200 0.3],'FaceColor',[0.4660 0.6740 0.1880])  % CycleTasks
+    rectangle('Position', [3700+1*5000+l*20000 4.1  200 0.3],'FaceColor',[0.4660 0.6740 0.1880])  % CycleTasks
+    rectangle('Position', [3700+2*5000+l*20000 4.1  400 0.3],'FaceColor',[0.4660 0.6740 0.1880])  % CycleTasks
+    rectangle('Position', [3700+3*5000+l*20000 4.1  100 0.3],'FaceColor',[0.8500 0.3250 0.0980])  % CycleTasks
+    
 end
 
 axis([-200 60200 -0.5 10.5])
